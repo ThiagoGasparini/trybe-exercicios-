@@ -1,0 +1,37 @@
+div:hover{
+    display: inline-block;
+}
+
+div:active{
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+.red:hover{
+    background-color: red;
+}
+
+.blue:hover{
+    background-color: blue;
+}
+
+.yellow:hover{
+    background-color: yellow;
+}
+
+.black:hover{
+    background-color: darkcyan;
+}
+
+.white:hover{
+    background-color: aquamarine;
+}
+
+.font{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.big{
+    font-size: 30px;
+    font-style: italic;
+}
