@@ -1,0 +1,22 @@
+.adjust{
+    text-align: center;
+}
+
+.adjust-list{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+li:hover{
+    background-color: aqua;
+}
+
+li:active{
+    font-family: fantasy;
+}
+
+.order-list{
+    display: inline-block;
+}
+
+
