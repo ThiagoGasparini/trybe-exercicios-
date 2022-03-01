@@ -1,0 +1,60 @@
+body {
+    background-color: aquamarine;
+    margin: 0;
+    padding: 5px;
+}
+h1 {
+    text-align: center;
+}
+
+nav ul{
+    text-align: center;
+}
+nav ul li{
+    display: inline-block;
+    padding-right: 50px;
+    font-size: 30px;
+}
+
+
+aside {
+    float: right;
+    border: 2px solid black;
+    margin-top: -155px;
+    height: 530px;
+    font-size: 20px;
+    
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+img {
+    width: 285px;
+}
+
+.cient {
+    list-style: none;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border: 2px solid black;
+    display: table;
+    padding: 1px;
+    font-weight: 900;
+}
+
+.left {
+    float: left;
+    margin-right: 280px;
+}
+
+
+footer {
+    text-align: center;
+    border: 2px solid black;
+    display: table;
+    margin: auto;
+    padding: 0px 10px;
+    margin-top: 40px;
+}
