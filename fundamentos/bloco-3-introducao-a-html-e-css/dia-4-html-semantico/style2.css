@@ -1,0 +1,28 @@
+body {
+    background-color: aquamarine;
+    margin: 0;
+    padding: 35px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.inline1 {
+    display: inline-block;
+    margin: auto;
+    margin-left: 15%;
+}
+
+.inline2 {
+    display: inline-block;
+    margin: auto;
+    margin-left: 15%;
+}
+
+.inline3 {
+    display: inline-block;
+    margin: auto;
+    margin-left: 15%;
+}
+
