@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //Exercicio 1
+      let addH1 = document.createElement("h1");
+      addH1.innerText = "Exercício 5.2 - JavaScript DOM";
+      addH1.style.textAlign = "center";
+      document.body.appendChild(addH1);
+
+      //Exercicio 2
+      let addMain = document.createElement("main");
+      addMain.classList = "main-content";
+      document.body.appendChild(addMain);
+
+      //Exercicio 3
+      let addSection = document.createElement("section");
+      addSection.className = "center-content";
+      addSection.style.background = 'green';
+      addMain.appendChild(addSection);
+
+      //Exercicio 4
+      let addP = document.createElement("p");
+      addP.innerText = "texto texto";
+      addSection.appendChild(addP);
+
+      //Exercicio 5
+      let addSection2 = document.createElement("section");
+      addSection2.className = "left-content";
+      addMain.appendChild(addSection2);
+
+      //Exercicio 6
+      let addSection3 = document.createElement("section");
+      addSection3.className = "right-content";
+      addSection3.style.marginRight = 'auto';
+      addMain.appendChild(addSection3);
+
+      //Exercicio 7
+      let addImg = document.createElement("img");
+      addImg.src = "https://picsum.photos/200";
+      addImg.className = "small-image";
+      addSection2.appendChild(addImg);
+
+      //Exercicio 8
+      let addList = document.createElement("ul");
+      addSection3.appendChild(addList);
+      let arrayNumbers = [
+        "Um",
+        "Dois",
+        "Três",
+        "Quatro",
+        "Cinco",
+        "Seis",
+        "Sete",
+        "Oito",
+        "Nove",
+        "Dez",
+      ];
+      for (let num in arrayNumbers) {
+        const elementLi = document.createElement("li");
+        elementLi.innerHTML = arrayNumbers[num];
+        addList.appendChild(elementLi);
+      }
+
+      // 9. Adicione 3 tags `h3`, todas sendo filhas do `main` criado no passo 2.
+      for (let index = 1; index <= 3; index += 1) {
+        const elementH3 = document.createElement('h3');
+        elementH3.innerHTML = 'Show ' + index;
+        addMain.appendChild(elementH3);
+      }
+
+      //Exercicios Segunda Parte
+      let title = document.querySelector('h1');
+      title.className = 'title';
+
+      let tagH3 = document.getElementsByTagName('h3');
+      for (let index = 0; index < 3; index += 1) {
+        tagH3[index].className = 'description';
+      }
+
+      let sectionLeftContent = document.getElementsByClassName('left-content')[0];
+      addMain.removeChild(addSection2);
+
+      let remov = document.getElementsByTagName('ul')[0];
+      remov.lastChild.remove();
+      remov.lastChild.remove();
+    
+    </script>
+  </body>
+</html>
