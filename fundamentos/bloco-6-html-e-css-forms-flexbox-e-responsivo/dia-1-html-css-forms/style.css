@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: bisque;
+}
+
+header h1 {
+  text-align: center;
+}
+
+main {
+  border: 3px solid black;
+  padding: 20px;
+  margin: 10px;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+.opt {
+  margin-bottom: 20px;
+}
+
+.text-area {
+  margin-bottom: 20px;
+}
+
+.data {
+  margin-bottom: 20px;
+}
+
+#btn-sub {
+    margin: 10px;
+    font-size: 20px;
+    padding: 3px 30px;
+    border-radius: 10px;
+}
+
+#clear {
+    margin: 10px;
+    font-size: 20px;
+    padding: 3px 30px;
+    border-radius: 10px;
+}
